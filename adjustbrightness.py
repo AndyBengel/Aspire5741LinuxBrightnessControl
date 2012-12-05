@@ -18,7 +18,6 @@ brightness_toggle_level = 219
 
 def adjust_brightness(new_level):
 	new_level = str(new_level)
-	print "here"
 	target = open("/sys/class/backlight/intel_backlight/brightness", 'w')
 	target.truncate()
 	target.write(new_level)
